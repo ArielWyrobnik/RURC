@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-label="RURC — Reichman University Robotics Club">
+  <defs>
+    <style>
+      .wm { font-family: "Space Grotesk", "Eurostile", "Arial Narrow", sans-serif; fill: #1b2fb5; }
+      .mark { font-weight: 700; font-size: 104px; letter-spacing: 2px; }
+      .tag  { font-weight: 500; font-size: 21px; letter-spacing: 11px; }
+    </style>
+  </defs>
+  <!-- Wordmark. Swap this whole file for your official PNG/SVG if you prefer. -->
+  <text x="50%" y="86" text-anchor="middle" class="wm mark">RURC</text>
+  <text x="50%" y="132" text-anchor="middle" class="wm tag">REICHMAN UNIVERSITY ROBOTICS CLUB</text>
+</svg>

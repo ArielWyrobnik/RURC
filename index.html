@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RURC — Reichman University Robotics Club</title>
+  <meta name="description" content="The Reichman University Robotics Club (RURC) — a student-led community building autonomous robots, drones and intelligent machines in Herzliya, Israel." />
+  <meta name="theme-color" content="#1b2fb5" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RURC — Reichman University Robotics Club" />
+  <meta property="og:description" content="Student-led robotics at Reichman University. We build robots — and the people who build them." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="logo" aria-label="RURC home">
+        <span class="logo__mark">RURC</span>
+        <span class="logo__tag">Reichman University Robotics Club</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#focus" class="nav__link">What we do</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#team" class="nav__link">Team</a>
+        <a href="#events" class="nav__link">Events</a>
+        <a href="#partners" class="nav__link">Partners</a>
+        <a href="#join" class="nav__cta">Join us</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">
+        <span class="dot"></span> Reichman University · Herzliya, Israel
+      </p>
+      <h1 class="hero__title reveal" data-delay="1">
+        We build robots —<br /><span class="grad">and the people who build them.</span>
+      </h1>
+      <p class="hero__lead reveal" data-delay="2">
+        RURC is a student-led robotics club at Reichman University. We turn curiosity into
+        hardware: autonomous ground robots, drones, and intelligent systems — built hands-on,
+        from first sketch to first run.
+      </p>
+      <div class="hero__actions reveal" data-delay="3">
+        <a href="#join" class="btn btn--primary" data-magnetic>Join the club</a>
+        <a href="#projects" class="btn btn--ghost">Explore projects</a>
+      </div>
+
+      <div class="hero__meta reveal" data-delay="4">
+        <div><strong>2025</strong><span>Founded</span></div>
+        <div><strong>4</strong><span>Active teams</span></div>
+        <div><strong>∞</strong><span>Ideas in motion</span></div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll to content">
+      <span class="hero__scroll-line"></span>
+      Scroll
+    </a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Autonomy</span><span class="sep">/</span>
+      <span>Drones</span><span class="sep">/</span>
+      <span>Computer Vision</span><span class="sep">/</span>
+      <span>Mechatronics</span><span class="sep">/</span>
+      <span>Embedded Systems</span><span class="sep">/</span>
+      <span>Machine Learning</span><span class="sep">/</span>
+      <span>Control</span><span class="sep">/</span>
+      <span>Manipulation</span><span class="sep">/</span>
+      <!-- duplicate for seamless loop -->
+      <span>Autonomy</span><span class="sep">/</span>
+      <span>Drones</span><span class="sep">/</span>
+      <span>Computer Vision</span><span class="sep">/</span>
+      <span>Mechatronics</span><span class="sep">/</span>
+      <span>Embedded Systems</span><span class="sep">/</span>
+      <span>Machine Learning</span><span class="sep">/</span>
+      <span>Control</span><span class="sep">/</span>
+      <span>Manipulation</span><span class="sep">/</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__left">
+        <p class="eyebrow reveal">01 — About</p>
+        <h2 class="section__title reveal" data-delay="1">
+          A home for everyone who wants to build.
+        </h2>
+      </div>
+      <div class="about__right">
+        <p class="about__lead reveal" data-delay="1">
+          We started RURC with a simple belief: the best way to learn robotics is to build a
+          robot. Not to read about one — to wire it, break it, debug it at 2&nbsp;a.m., and watch
+          it finally move.
+        </p>
+        <p class="reveal" data-delay="2">
+          We're an open, cross-disciplinary community — computer science, business, law, design
+          and beyond. No prior experience required, only curiosity and the willingness to get
+          your hands dirty. Members learn by doing, ship real projects, compete, and grow into
+          the engineers, founders and leaders robotics needs next.
+        </p>
+        <ul class="about__list reveal" data-delay="3">
+          <li><span>↳</span> Hands-on, project-first learning</li>
+          <li><span>↳</span> Open to every faculty &amp; skill level</li>
+          <li><span>↳</span> Workshops, build nights &amp; competitions</li>
+          <li><span>↳</span> A bridge to industry and research</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section stats">
+    <div class="container stats__grid">
+      <div class="stat reveal">
+        <div class="stat__num" data-count="45" data-suffix="+">0</div>
+        <div class="stat__label">Active members</div>
+      </div>
+      <div class="stat reveal" data-delay="1">
+        <div class="stat__num" data-count="4">0</div>
+        <div class="stat__label">Project teams</div>
+      </div>
+      <div class="stat reveal" data-delay="2">
+        <div class="stat__num" data-count="12" data-suffix="+">0</div>
+        <div class="stat__label">Workshops run</div>
+      </div>
+      <div class="stat reveal" data-delay="3">
+        <div class="stat__num" data-count="2025" data-group="false">0</div>
+        <div class="stat__label">Founded</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOCUS / WHAT WE DO ============ -->
+  <section class="section focus" id="focus">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal">02 — What we do</p>
+          <h2 class="section__title reveal" data-delay="1">Four ways to get your hands on a robot.</h2>
+        </div>
+        <p class="section__intro reveal" data-delay="2">
+          Every member joins a team. Teams own a real goal for the year — and the freedom to
+          reach it however they want.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal" data-delay="0">
+          <div class="card__index">01</div>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V9a6 6 0 0 1 12 0v8M9 9h6" /></svg>
+          </div>
+          <h3 class="card__title">Autonomous Ground Robots</h3>
+          <p class="card__text">
+            Mobile platforms that sense, map and navigate on their own — SLAM, path planning and
+            real-time control on hardware we build and tune ourselves.
+          </p>
+          <div class="card__tags"><span>ROS 2</span><span>SLAM</span><span>Control</span></div>
+        </article>
+
+        <article class="card reveal" data-delay="1">
+          <div class="card__index">02</div>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 12l5-5M12 12l-5-5M12 12l5 5M12 12l-5 5M12 9v6"/><circle cx="12" cy="12" r="2.2"/></svg>
+          </div>
+          <h3 class="card__title">Aerial Robotics &amp; Drones</h3>
+          <p class="card__text">
+            From first hover to autonomous flight. We design airframes, tune flight controllers
+            and add perception so our drones can think for themselves.
+          </p>
+          <div class="card__tags"><span>Flight Ctrl</span><span>Perception</span><span>PX4</span></div>
+        </article>
+
+        <article class="card reveal" data-delay="2">
+          <div class="card__index">03</div>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+          </div>
+          <h3 class="card__title">AI &amp; Perception</h3>
+          <p class="card__text">
+            Teaching machines to see and decide. Computer vision, sensor fusion and learned
+            policies that turn raw data into smart, real-world action.
+          </p>
+          <div class="card__tags"><span>Vision</span><span>ML</span><span>Sensor Fusion</span></div>
+        </article>
+
+        <article class="card reveal" data-delay="3">
+          <div class="card__index">04</div>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 4l-2 2 4 4 2-2a2.8 2.8 0 0 0-4-4zM12 6L4 14v4h4l8-8M9 13l2 2"/></svg>
+          </div>
+          <h3 class="card__title">Mechatronics &amp; Makers</h3>
+          <p class="card__text">
+            Where ideas become hardware. CAD, 3D printing, PCB design and embedded firmware —
+            the craft of making mechanical, electrical and software parts move as one.
+          </p>
+          <div class="card__tags"><span>CAD</span><span>PCB</span><span>Embedded</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal">03 — Projects</p>
+          <h2 class="section__title reveal" data-delay="1">Things we're building right now.</h2>
+        </div>
+        <p class="section__intro reveal" data-delay="2">
+          A snapshot of our current builds. Swap in your own photos and write-ups as the projects
+          progress.
+        </p>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project reveal" data-delay="0">
+          <div class="project__media" data-art="1"><span class="project__tag">Autonomy</span></div>
+          <div class="project__body">
+            <h3>Rover&nbsp;One</h3>
+            <p>Our flagship autonomous ground rover — built to map an unknown space and navigate it without a human in the loop.</p>
+            <a href="#join" class="link-arrow">Follow the build <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal" data-delay="1">
+          <div class="project__media" data-art="2"><span class="project__tag">Aerial</span></div>
+          <div class="project__body">
+            <h3>SkyScout</h3>
+            <p>A vision-guided quadcopter learning to detect, track and follow targets in real time.</p>
+            <a href="#join" class="link-arrow">Follow the build <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal" data-delay="2">
+          <div class="project__media" data-art="3"><span class="project__tag">Manipulation</span></div>
+          <div class="project__body">
+            <h3>GripLab</h3>
+            <p>A low-cost robotic arm + gripper platform for experimenting with grasping and pick-and-place.</p>
+            <a href="#join" class="link-arrow">Follow the build <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal" data-delay="3">
+          <div class="project__media" data-art="4"><span class="project__tag">Education</span></div>
+          <div class="project__body">
+            <h3>Build Nights</h3>
+            <p>Weekly open sessions where members learn ROS, soldering, CAD and control — one hands-on lab at a time.</p>
+            <a href="#events" class="link-arrow">See the schedule <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal">04 — Team</p>
+          <h2 class="section__title reveal" data-delay="1">The people behind RURC.</h2>
+        </div>
+        <p class="section__intro reveal" data-delay="2">
+          A founding crew of students who'd rather build than wait. Replace these with your real
+          board and leads.
+        </p>
+      </div>
+
+      <div class="team__grid">
+        <article class="member reveal" data-delay="0">
+          <div class="member__avatar" data-initials="AW"></div>
+          <h3 class="member__name">Ariel Wyrobnik</h3>
+          <p class="member__role">Co-Founder &amp; President</p>
+        </article>
+        <article class="member reveal" data-delay="1">
+          <div class="member__avatar" data-initials="RM"></div>
+          <h3 class="member__name">Your Name</h3>
+          <p class="member__role">Co-Founder &amp; Tech Lead</p>
+        </article>
+        <article class="member reveal" data-delay="2">
+          <div class="member__avatar" data-initials="TL"></div>
+          <h3 class="member__name">Team Lead</h3>
+          <p class="member__role">Aerial Robotics</p>
+        </article>
+        <article class="member reveal" data-delay="3">
+          <div class="member__avatar" data-initials="TL"></div>
+          <h3 class="member__name">Team Lead</h3>
+          <p class="member__role">Autonomy</p>
+        </article>
+        <article class="member reveal" data-delay="4">
+          <div class="member__avatar" data-initials="OM"></div>
+          <h3 class="member__name">Operations</h3>
+          <p class="member__role">Events &amp; Partnerships</p>
+        </article>
+        <article class="member reveal" data-delay="5">
+          <div class="member__avatar member__avatar--join" data-initials="+"></div>
+          <h3 class="member__name">This could be you</h3>
+          <p class="member__role"><a href="#join" class="link-arrow">Join the team →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal">05 — Events</p>
+          <h2 class="section__title reveal" data-delay="1">Come build with us.</h2>
+        </div>
+        <p class="section__intro reveal" data-delay="2">
+          Open to all Reichman students. Walk in curious, walk out with a soldering iron in hand.
+        </p>
+      </div>
+
+      <ul class="events__list">
+        <li class="event reveal" data-delay="0">
+          <div class="event__date"><span class="event__day">12</span><span class="event__mon">SEP</span></div>
+          <div class="event__body">
+            <h3>Kickoff &amp; Open House</h3>
+            <p>Meet the teams, see the robots, and find out which build is right for you.</p>
+          </div>
+          <div class="event__meta"><span>Reichman · Main Hall</span><span class="event__type">Open</span></div>
+        </li>
+        <li class="event reveal" data-delay="1">
+          <div class="event__date"><span class="event__day">19</span><span class="event__mon">SEP</span></div>
+          <div class="event__body">
+            <h3>ROS 2 Crash Course</h3>
+            <p>From zero to a moving robot in one evening. Bring a laptop — we bring the rest.</p>
+          </div>
+          <div class="event__meta"><span>Robotics Lab</span><span class="event__type">Workshop</span></div>
+        </li>
+        <li class="event reveal" data-delay="2">
+          <div class="event__date"><span class="event__day">03</span><span class="event__mon">OCT</span></div>
+          <div class="event__body">
+            <h3>Build Night #1</h3>
+            <p>Weekly hands-on session. Wiring, CAD, code — pick a station and dive in.</p>
+          </div>
+          <div class="event__meta"><span>Robotics Lab</span><span class="event__type">Recurring</span></div>
+        </li>
+        <li class="event reveal" data-delay="3">
+          <div class="event__date"><span class="event__day">24</span><span class="event__mon">OCT</span></div>
+          <div class="event__body">
+            <h3>Industry Night</h3>
+            <p>Talks and demos with engineers and founders from Israel's robotics scene.</p>
+          </div>
+          <div class="event__meta"><span>TBA</span><span class="event__type">Talk</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS ============ -->
+  <section class="section partners" id="partners">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <div>
+          <p class="eyebrow reveal">06 — Partners</p>
+          <h2 class="section__title reveal" data-delay="1">Backed by people who build the future.</h2>
+          <p class="section__intro section__intro--center reveal" data-delay="2">
+            We grow with partners from industry, research and the university. Want your logo here?
+            <a href="#join" class="link-arrow">Let's talk →</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="partners__grid reveal" data-delay="3">
+        <div class="partner">Reichman University</div>
+        <div class="partner">Your Sponsor</div>
+        <div class="partner">Your Sponsor</div>
+        <div class="partner">Your Sponsor</div>
+        <div class="partner">Your Sponsor</div>
+        <div class="partner">Your Sponsor</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOIN / CTA ============ -->
+  <section class="section join" id="join">
+    <div class="container join__inner">
+      <div class="join__glow" aria-hidden="true"></div>
+      <p class="eyebrow eyebrow--light reveal">Ready when you are</p>
+      <h2 class="join__title reveal" data-delay="1">No experience needed.<br />Just bring curiosity.</h2>
+      <p class="join__text reveal" data-delay="2">
+        Whether you've built a hundred robots or never touched a wire, there's a place for you at
+        RURC. Tell us a little about yourself and we'll get you to your first build night.
+      </p>
+      <div class="join__actions reveal" data-delay="3">
+        <a href="mailto:rurc@runi.ac.il?subject=I%20want%20to%20join%20RURC" class="btn btn--primary" data-magnetic>Apply to join</a>
+        <a href="mailto:rurc@runi.ac.il" class="btn btn--light-ghost">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--footer">
+          <span class="logo__mark">RURC</span>
+          <span class="logo__tag">Reichman University Robotics Club</span>
+        </a>
+        <p class="footer__blurb">
+          Student-led robotics at Reichman University, Herzliya. We build robots — and the people
+          who build them.
+        </p>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer">
+        <h4>Explore</h4>
+        <a href="#about">About</a>
+        <a href="#focus">What we do</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="More">
+        <h4>Get involved</h4>
+        <a href="#events">Events</a>
+        <a href="#partners">Partners</a>
+        <a href="#join">Join us</a>
+        <a href="mailto:rurc@runi.ac.il">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 11v6"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.6 2 5.6 2.3 5.6 2.3a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 8.7c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V21"/></svg>
+          </a>
+          <a href="mailto:rurc@runi.ac.il" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Reichman University Robotics Club. Built by students, for students.</p>
+      <p class="footer__credit">Made with ⚙ in Herzliya</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
