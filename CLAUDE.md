@@ -85,7 +85,8 @@ If the exact logo blue differs, update `--blue` (and the `COLOR` RGB constant in
 - **Events:** edit `.event` blocks (`event__day` / `event__mon` for the date).
 - **Partners:** edit `.partner` text blocks, or swap to `<img>` logos.
 - **Stats numbers:** `data-count` (target) and optional `data-suffix` on
-  `.stat__num`.
+  `.stat__num`. Add `data-group="false"` to skip the thousands separator —
+  used on the "Founded" year so `2025` doesn't render as `2,025`.
 - **Contact email:** currently `rurc@runi.ac.il` in the Join section + footer.
   Update if the real address differs.
 - **Social links:** footer `.footer__social` anchors are `#` placeholders —
@@ -116,8 +117,28 @@ Opening `index.html` directly in a browser also works (fonts need internet).
 
 ## Deploy
 
-GitHub Pages: Settings → Pages → deploy from branch, root (`/`). The site is the
-repo root, so no extra config is required.
+The site is the repo root, so no build/config is needed — point any static host
+at the root.
+
+**Current repo state (keep in mind):**
+- Repo is **private**.
+- There is **no `main` branch yet**; the default branch is the working branch
+  (`claude/nifty-cori-61xi4y`). The website lives there.
+
+**Option A — GitHub Pages (free, but needs a *public* repo):**
+1. Settings → General → Danger Zone → **Change visibility → Make public**.
+2. Settings → **Pages** → Source: *Deploy from a branch* → pick the default
+   branch → folder `/ (root)` → **Save**.
+3. After ~1 min the live URL appears: `https://arielwyrobnik.github.io/RURC/`.
+   It auto-rebuilds on every push to that branch.
+
+**Option B — keep the repo private:** GitHub Pages on a private repo needs a paid
+plan, so instead connect **Netlify** or **Vercel** (both free, both work with
+private repos and auto-deploy on every push). Import the repo, framework
+"None/Static", publish directory = root.
+
+When a real `main` branch exists later, switch the Pages/host source to `main`
+so the live site tracks merges into main.
 
 ## Conventions / guardrails
 
